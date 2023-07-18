@@ -1,0 +1,18 @@
+apiVersion: velero.io/v1
+kind: Restore
+metadata:
+  creationTimestamp: null
+  name: argo-18-7-23-7.05am
+  namespace: velero
+spec:
+  backupName: argo-18-7-23-7.05am
+  hooks: {}
+  includedNamespaces:
+  - '*'
+  includedResources:
+  - persistentvolumeclaims
+  - persistentvolumes
+  namespaceMapping:
+    default: systems
+    pv: infra
+status: {}
