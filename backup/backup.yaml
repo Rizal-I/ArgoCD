@@ -1,10 +1,15 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: argo-18-7-23-7.57am
+  name: argo-18-7-23-7.58am
   namespace: velero
 spec:
-  csiSnapshotTimeout: 0s
+  csiSnapshotTimeout: 10m0s
+  defaultVolumesToFsBackup: false
   includedNamespaces:
-  - '*'
-  ttl: 0s
+    - '*'
+  itemOperationTimeout: 1h0m0s
+  storageLocation: default
+  ttl: 720h0m0s
+  volumeSnapshotLocations:
+    - default
