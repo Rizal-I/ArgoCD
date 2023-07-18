@@ -6,5 +6,5 @@ metadata:
 spec:
   csiSnapshotTimeout: 0s
   includedNamespaces:
-  - '*'
+  - 'c'
   ttl: 0s
