@@ -1,10 +1,10 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: argo-18-7-23-7.55am
+  name: argo-18-7-23-7.56am
   namespace: velero
 spec:
   csiSnapshotTimeout: 0s
   includedNamespaces:
-  - 'c'
+  - '*'
   ttl: 0s
