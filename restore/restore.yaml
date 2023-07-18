@@ -1,10 +1,10 @@
 apiVersion: velero.io/v1
 kind: Restore
 metadata:
-  name: argo-18-7-23-7.54am
+  name: new-cluster-1
   namespace: velero
 spec:
-  backupName: argo-18-7-23-7.54am
+  backupName: old-cluster-1
   includedNamespaces:
   - '*'
   includedResources:
